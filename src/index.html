@@ -27,6 +27,7 @@
                 /* background-color: whitesmoke; */
             }
             .form h2 {
+                width: 75%;
                 font-size: 3rem;
                 font-family: Century Gothic;
                 margin: 40px;
@@ -62,20 +63,32 @@
                 width: 450px;
                 height: 450px;
             }
-
+            .mb-3 input {
+                padding-left: 5%;
+                width: 100%;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <form action="" class="form">
                 <h2>Login Dashboard</h2>
-                <input type="email" class="box" placeholder="Enter Email">
-                <input type="password" class="box" placeholder="Enter Password">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                <!-- <input type="email" class="box" placeholder="Enter Email">
+                <input type="password" class="box" placeholder="Enter Password"> -->
                 <input type="submit" value="SIGN IN" id="submit">
                 <div id="passwordHelpBlock" class=""></div>
             </form>
             <div class="side">
-                <img src="./img/img.png" alt="">
+                <img src="./img/img.png" class="img-fluid" alt="...">
             </div>
         </div>
         <!-- <div class="position-absolute top-50 start-50 translate-middle">  
